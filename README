@@ -4,6 +4,11 @@ Git Info: git@github.com:abelnation/homedir.git
 
 = = = = = = = = = = = = 
 
+Git config commands to run on a new machine:
+> git config --global user.name "Abel Allison"
+> git config --global user.email abel.allison@gmail.com
+
+
 Git commands:
 
 push to github:
