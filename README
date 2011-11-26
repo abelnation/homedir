@@ -1,0 +1,13 @@
+Description: all my config files for my home directory when I need to get set up on a new compter.  
+
+Git Info: git@github.com:abelnation/homedir.git
+
+= = = = = = = = = = = = 
+
+Git commands:
+
+push to github:
+> git push git@github.com:abelnation/homedir.git master
+
+
+
