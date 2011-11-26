@@ -11,6 +11,9 @@ Git config commands to run on a new machine:
 
 Git commands:
 
+commit all local changes:
+> git commit -a [-m 'commit message']
+
 push to github:
 > git push git@github.com:abelnation/homedir.git master
 
