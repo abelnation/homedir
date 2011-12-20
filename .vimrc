@@ -1,12 +1,16 @@
 
 call pathogen#infect()			" enable pathogen plugin manager. see:
-								" https://github.com/tpope/vim-pathogen#readme
 
 " Base settings
 set nocompatible				" choose no compatibility with legacy vi
 set encoding=utf-8
 set showcmd						" display incomplete commands
 filetype plugin indent on		" load file type plugins + indentation
+
+" Colors
+set background=dark
+" let g:solarized_visibility = "low"
+colorscheme wombat
 
 " Set up leader shortcuts
 let mapleader = ","
@@ -20,10 +24,9 @@ set wmh=0
 syntax on
 syntax enable
 
-" tags are 4 spaces
+" tabs are 4 spaces
 set tabstop=4
 set shiftwidth=4
-
 set autoindent
 
 " ignores case unless search term is uppercase
@@ -32,6 +35,7 @@ set smartcase
 
 " allow backspacing over indent, eol, and start of an insert
 " set backspace=2
+set backspace=indent,eol,start
 
 " when page starts to scroll, keep cursor 8 lines from top and bottom
 set scrolloff=8
