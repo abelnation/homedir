@@ -20,6 +20,17 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 set wmh=0
 
+" Set to auto read when a file is changed from the outside
+set autoread
+
+set hid "Change buffer - without saving
+
+" Fast editing of the .vimrc
+map <leader>e :e! ~/.vimrc<cr>
+
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+
 " syntax highlighting on
 syntax on
 syntax enable
@@ -36,6 +47,10 @@ set smartcase
 " allow backspacing over indent, eol, and start of an insert
 " set backspace=2
 set backspace=indent,eol,start
+
+" Showing invisible characters
+set list
+set listchars=tab:▸\  " eol:¬ Use the same symbols as TextMate for tabstops and EOLs
 
 " when page starts to scroll, keep cursor 8 lines from top and bottom
 set scrolloff=8
